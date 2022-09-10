@@ -1,3 +1,4 @@
+<%= render "shared/header" %>
 <h1><%= t('.title', resource: resource_name.to_s.humanize) %></h1>
 
 <%= form_with model: @user, url: user_registration_path, class:"form-signup",local: true do |f| %>
