@@ -1,5 +1,4 @@
-<h1><%= render "shared/header" %>
-<%= t('.sign_up') %></h1>
+<h1><%= t('.sign_up') %></h1>
 
 <%= form_with model: @user, url: user_registration_path, class: "form-signup", local: true do |f| %>
   <%= bootstrap_devise_error_messages! %>
