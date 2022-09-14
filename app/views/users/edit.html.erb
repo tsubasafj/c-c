@@ -1,0 +1,31 @@
+<%= form_with model: @user, local: true do |f| %>
+  <div class="profile-wrap">
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <%= image_tag 'IMG_2659-4.jpg', class: "round-img" %>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <h1><%= f.text_field :name, class: 'form-control' %></h1>
+        <div class="row aline-items-center">
+          <div class="col-md-4 profile-colums">
+            Camera: <%=  f.text_field :camera, class: 'form-control'  %> 
+          </div>
+          <div class="col-md-4 profile-colums">
+            Camera Career: <%=  f.text_field :camera_carrer, class: 'form-control' %>
+          </div>
+          <div class="col-md-4 profile-colums">
+            Model Career: <%=  f.text_field :model_carrer, class: 'form-control' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="form-group">
+    <%= f.submit 'Update', class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+
+<%= link_to t('.back'), :back %>

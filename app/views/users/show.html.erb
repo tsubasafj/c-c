@@ -1,3 +1,5 @@
+<%= render "shared/header" %>
+
 <div class="profile-wrap">
   <div class="row">
     <div class="col-md-4 text-center">
@@ -17,7 +19,7 @@
             Model Career: <%= @user.model_carrer%>
           </div>
         </div>
-        <%= link_to "プロフィールを編集", edit_user_registration_path, class: "btn btn-outline-dark common-btn edit-profile-btn" %>
+        <%= link_to "プロフィールを編集", edit_user_path(@user), class: "btn btn-outline-dark common-btn edit-profile-btn" %>
       </div>
     </div>
   </div>

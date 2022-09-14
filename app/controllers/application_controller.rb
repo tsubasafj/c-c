@@ -13,5 +13,6 @@ class ApplicationController < ActionController::Base
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :camera, :camera_carrer, :model_carrer])
+    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :camera, :camera_carrer, :model_carrer])
   end
 end
